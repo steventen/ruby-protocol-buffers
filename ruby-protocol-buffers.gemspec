@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %{Ruby compiler and runtime for the google protocol buffers library.}
   gem.homepage      = "https://github.com/codekitchen/ruby-protocol-buffers"
 
-  gem.files         = `git ls-files`.split($/)
+  gem.files         = `git ls-files`.split($/) + ['lib/protocol_buffers/runtime/text_parser.rb']
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
