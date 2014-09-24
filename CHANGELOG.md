@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 1.6.1 - 2014-09-24
+### Changed
+- Fix gem packaging error.
+
 ## 1.6.0 - 2014-09-22
 ### Added
 - More metaprogramming support via `get_expected_field`, `get_optional_field`.
