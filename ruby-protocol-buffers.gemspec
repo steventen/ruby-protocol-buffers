@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.license       = 'BSD'
 
-  gem.extra_rdoc_files << "Changelog.md"
+  gem.extra_rdoc_files << "CHANGELOG.md"
 
   gem.add_development_dependency "autotest-standalone"
   gem.add_development_dependency "autotest-growl"
