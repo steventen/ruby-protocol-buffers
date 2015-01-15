@@ -198,7 +198,7 @@ HEADER
       field.default_value
     when TYPE_ENUM
       typename = field_typename(field)
-      %{#{typename}::#{field.default_value}}
+      %{#{typename}::#{capfirst(field.default_value)}}
     else
       field.default_value
     end
