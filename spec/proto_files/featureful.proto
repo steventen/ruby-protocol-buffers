@@ -91,3 +91,8 @@ message E {
 message F {
   optional string s = 1;
 }
+
+message Keywords {
+  repeated bool or = 1;
+  optional bool and = 2;
+}

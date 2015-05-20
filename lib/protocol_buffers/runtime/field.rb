@@ -153,10 +153,10 @@ module ProtocolBuffers
         klass.class_eval <<-EOF, __FILE__, __LINE__+1
           def #{name}=(__value)
             if __value.nil?
-              #{name}.clear
+              self.#{name}.clear
             else
-              unless __value.equal?(#{name})
-                #{name}.clear
+              unless __value.equal?(self.#{name})
+                self.#{name}.clear
                 __value.each { |i| @#{name}.push i }
               end
               if @parent_for_notify
@@ -610,7 +610,7 @@ module ProtocolBuffers
 
       def text_format(io, value, options = nil)
         formatted = @value_to_name[value] || value.to_s
-        io.write formatted 
+        io.write formatted
       end
     end
 
