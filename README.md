@@ -144,16 +144,15 @@ end
 * RPC stubbing
 * formatting to and parsing from text format
 
-### Unsupported Features
+### Currently Unsupported Features
 
 * extensions
 * packed option (could be useful)
 * accessing custom options
 
-### Probably Never to be Supported
+## Protocol Buffers v3
 
-* the unsupported options (java_*, optimize_for, message_set_wire_format,
-  deprecated)
+This library supports the Protocol Buffers v2 specification. Google is developing official Ruby support for Protobuf v3, the alpha gem is currently available at https://rubygems.org/gems/google-protobuf but documentation is sparse.
 
 ## Authors
 
