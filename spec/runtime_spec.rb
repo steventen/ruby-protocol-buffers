@@ -952,6 +952,14 @@ describe ProtocolBuffers, "runtime" do
     Services::NoNameFooBarService.fully_qualified_name.should == nil
   end
 
+  it "correctly handles fields with keyword names" do
+    f = Featureful::Keywords.new(
+      :or => [true],
+      :and => false,
+    )
+    f.or.should =~ [true]
+  end
+
   def get_rpcs
     Services::FooBarService.rpcs.size.should == 2
     first_rpc = Services::FooBarService.rpcs[0]

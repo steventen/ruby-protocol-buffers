@@ -12,6 +12,7 @@ module Featureful
   class D < ::ProtocolBuffers::Message; end
   class E < ::ProtocolBuffers::Message; end
   class F < ::ProtocolBuffers::Message; end
+  class Keywords < ::ProtocolBuffers::Message; end
 
   # enums
   module MainPayloads
@@ -174,6 +175,13 @@ module Featureful
     set_fully_qualified_name "featureful.F"
 
     optional :string, :s, 1
+  end
+
+  class Keywords < ::ProtocolBuffers::Message
+    set_fully_qualified_name "featureful.Keywords"
+
+    repeated :bool, :or, 1
+    optional :bool, :and, 2
   end
 
 end
