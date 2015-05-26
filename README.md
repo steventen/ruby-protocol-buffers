@@ -160,7 +160,7 @@ Brian Palmer (http://github.com/codekitchen)
 
 ## Source
 
-http://github.com/mozy/ruby-protocol-buffers
+https://github.com/codekitchen/ruby-protocol-buffers
 
 ## License
 
