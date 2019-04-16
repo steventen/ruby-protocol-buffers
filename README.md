@@ -1,3 +1,7 @@
+## Protocol Buffers v3
+
+**IMPORTANT** This library supports the Protocol Buffers v2 specification. Google has developed official Ruby support for Protobuf v3, the  gem is available at https://rubygems.org/gems/google-protobuf. Because there's now an official gem, I have no plans to implement v3 support in this library.
+
 # Ruby Protocol Buffers
 
 [![Build Status](https://travis-ci.org/codekitchen/ruby-protocol-buffers.png?branch=master)](https://travis-ci.org/codekitchen/ruby-protocol-buffers)
@@ -149,10 +153,6 @@ end
 * extensions
 * packed option (could be useful)
 * accessing custom options
-
-## Protocol Buffers v3
-
-This library supports the Protocol Buffers v2 specification. Google is developing official Ruby support for Protobuf v3, the alpha gem is currently available at https://rubygems.org/gems/google-protobuf but documentation is sparse.
 
 ## Authors
 
